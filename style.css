@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    background-color: #fff;
+    width: 1263px;
+    height: 102px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    height:43.71px ;
+    width:70px ;
+    margin-left: 135px;
+    
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 30px;
+}
+.menu ul li a{
+ text-decoration: none;
+ color: gray;
+}    
+    
+.menu{
+    display: flex;
+    justify-content: end;
+    width: 65%;
+}
+ .toggle{
+    display: none;
+    justify-content: end;
+    width: 72%;
+}
+/* second div */
+.container-2{
+    background-color: #fff;
+    height: 900px;
+    width: 1263px;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 120px;
+}
+.images img{
+   padding: 20px;
+   height: 200px;
+   width: 160px;
+   transition: width .3s, height .3s ;
+  }
+  .arrows
+  {
+    display: flex;
+    gap: 13px;
+    padding: 30px 140px;
+  }
+
+  /* footter */
+
+  footer{
+    background-color:black;
+    height:350px;
+    width: 1263px;
+    display:flex;
+    font-size: small;
+    
+  }
+  footer div{
+   width: 100%;
+   padding: 70px;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .a2 li,.a3 li{
+   margin-bottom: 20px;
+
+  }
+  .hovr:hover{
+   border: 1px solid black;
+   height: 55px;
+  }
+ @media(max-width:900px){
+    .images img{
+        padding: 20px;
+        height: 270px;
+        width: 210px;
+       }
+       .container-2{
+        height: 1300px;
+    }
+ }
+ @media(max-width:600px){
+    .images img{
+        height: 360px;
+        width: 295px;
+        
+       }
+       .menu{
+        display: none;
+       }
+       .toggle{
+        display:flex;
+        justify-content: end;
+        width: 72%;
+    }
+    .container-2{
+        height: 2000px;
+    } 
+     
+ }
+ @media(max-width:400px){
+    .images img{
+        height: 540px;
+        width: 461px;
+        
+       }
+       .container-2{
+        height: 3400px;
+    } 
+    footer{
+        height:1050px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    footer div{
+        padding: 20px 0;
+    }
+}
+ @media(max-width:320px){
+    .images img{
+        height:1240px;
+        width: 860px;
+        
+       }
+       footer div{
+        width: 10%;
+        padding: 60px;
+       }
+    .navbar,.container-2,footer{
+    width: 1180px;
+   }  
+   .container-2{
+    height: 13200px;
+} 
+
+}
